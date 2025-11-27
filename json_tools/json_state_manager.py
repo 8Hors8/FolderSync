@@ -4,6 +4,7 @@ json_state_manager.py
 import logging
 import json
 from pathlib import Path
+from typing import Dict, Optional, Union
 
 from json_tools.creation_json import check_json_file
 
@@ -18,7 +19,7 @@ class JsonStateManager:
     - даёт доступ к секциям (collection, tracked, conflicts и т.д.).
     """
 
-    def __init__(self, file_path: str):
+    def __init__(self, file_path: Optional[str]=None):
         self.file_path = file_path
         self.data = {}
         self.load_or_create()

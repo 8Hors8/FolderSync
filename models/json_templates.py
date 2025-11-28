@@ -19,6 +19,14 @@ TRACKED_TEMPLATE: Dict[str, Any] = {
     "last_scan": "",
     "children": []       # структура сканирования
 }
+INDEX_TEMPLATE: Dict[str, Any] = {
+    "type": "",
+    "size": None,
+    "modified": None,
+    "hash": "",
+    "belongs_to": "collection"
+}
+
 
 
 def create_initial_data() -> Dict[str, Any]:

@@ -33,7 +33,15 @@ def create_initial_data() -> Dict[str, Any]:
         },
 
         # Основная коллекция
-        "collection": deepcopy(COLLECTION_TEMPLATE),
+        "collection": {
+            "path_collection": "",
+            "last_scan": "",
+            "children": []
+        },
+
+        "index":{
+
+        },
 
         # Отслеживаемые папки — список элементов TRACKED_TEMPLATE
         "tracked": [],

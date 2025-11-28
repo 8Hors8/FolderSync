@@ -1,5 +1,5 @@
 
-from hashing.util import folder_hash, file_hash
+from models.hashing.util import folder_hash, file_hash
 
 
 def hash_file_folder(path, type_dir: str):

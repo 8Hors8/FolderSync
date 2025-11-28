@@ -26,10 +26,10 @@ import logging
 from pathlib import Path
 from typing import Dict, Optional, Union
 
-from working_with_files.utils import find_file  # ожидается: (bool, Optional[str])
-from working_with_files.utils import get_base_dir  # ожидается: Path
+from models.working_with_files.utils import find_file  # ожидается: (bool, Optional[str])
+from models.working_with_files.utils import get_base_dir  # ожидается: Path
 from config_project import JSON_FILE_NAME
-from json_tools.json_templates_2 import create_initial_data # выбрать нужный шаблон
+from models.json_tools.json_templates_2 import create_initial_data # выбрать нужный шаблон
 
 log = logging.getLogger(__name__)
 

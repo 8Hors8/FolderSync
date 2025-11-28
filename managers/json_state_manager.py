@@ -4,9 +4,9 @@ json_state_manager.py
 import logging
 import json
 from pathlib import Path
-from typing import Dict, Optional, Union
+from typing import Optional
 
-from json_tools.creation_json import check_json_file
+from models.json_tools.creation_json import check_json_file
 
 log = logging.getLogger(__name__)
 

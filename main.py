@@ -1,9 +1,8 @@
 import logging
-import json
 
 import config_log
-from json_tools.json_state_manager import JsonStateManager
-from scanning_folder.scan_manager import ScanManager
+from managers.json_state_manager import JsonStateManager
+from managers.scan_manager import ScanManager
 
 
 config_log.config_logging(logging.DEBUG)

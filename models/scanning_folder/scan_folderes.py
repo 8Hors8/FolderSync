@@ -1,7 +1,7 @@
 import os
 import logging
 
-from hashing import hash_file_folder
+from models.hashing import hash_file_folder
 from .utils import extract_formats
 
 log = logging.getLogger(__name__)
